@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <title>MiniChatBot</title>
+  </head>
+  <body>
+    <h1>MiniChatBot</h1>
+
+    <form action="/get">
+      <input type="text" name="msg">
+      <input type="submit" value="Envoyer">
+    </form>
+
+    {% if response %}
+      <p>{{ response }}</p>
+    {% endif %}
+
+  </body>
+</html>
